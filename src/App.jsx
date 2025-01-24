@@ -25,7 +25,7 @@ function Button(){
   // const [count,setCount] = useRecoilState(countAtom) 
   // function handleClick(){
   //   setCount(count+1)
-  // }                            //if you are using these 4 lines then button wil also re- render why because you are using count+1 state variable but we dont want count to update count because we can use setCount directly
+  // }                            //if you are using these 4 lines then button wil also re- render why because you are using count+1 state variable but we dont want count to update count because we can use only setCount
   function handleClick(){
     setCount((prevcount)=>prevcount+1)
   }
