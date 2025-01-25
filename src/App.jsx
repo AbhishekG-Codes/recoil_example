@@ -1,5 +1,5 @@
 import {RecoilRoot,useRecoilState,useRecoilValue, useSetRecoilState} from "recoil"
-import { countAtom } from "./store/atoms/countAtom";
+import { countAtom, evenSelector } from "./store/atoms/countAtom";
 
 export default function App() {
   return (
@@ -17,6 +17,16 @@ function CountVar(){
   return(<>
   from Count 
     {count}
+
+    <EvenRender>
+
+    </EvenRender>
+  </>)
+}
+function EvenRender(){
+  const isEven = useRecoilValue(evenSelector);
+  return(<>
+    {isEven?"it is even":null}
   </>)
 }
 
