@@ -15,7 +15,7 @@ function CountVar(){
   const count = useRecoilValue(countAtom);
   console.log("re-render in countvar");
   return(<>
-  from Count === 
+  from Count 
     {count}
   </>)
 }
